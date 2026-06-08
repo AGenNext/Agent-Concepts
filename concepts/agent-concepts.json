@@ -1,0 +1,77 @@
+{
+  "$schema": "../schemas/agent-concept.schema.json",
+  "registry": "AGenNext Agent Concepts",
+  "version": "0.1.0",
+  "concepts": [
+    {
+      "id": "agent",
+      "name": "Agent",
+      "category": "identity",
+      "definition": "A governed digital actor that can observe context, reason over intent, use approved capabilities, and produce accountable outcomes.",
+      "implementedBy": ["Agent-Identity", "Agent-Registry", "Agent-Kernel"]
+    },
+    {
+      "id": "agent-identity",
+      "name": "Agent Identity",
+      "category": "identity",
+      "definition": "The persistent identity of an agent across systems, tenants, runtimes, and lifecycle states.",
+      "implementedBy": ["Agent-Identity"]
+    },
+    {
+      "id": "agent-role",
+      "name": "Agent Role",
+      "category": "role",
+      "definition": "The function an agent performs inside a system.",
+      "implementedBy": ["Agent-As-A-Tool", "Agent-As-A-Operator", "Agent-As-A-Provider"]
+    },
+    {
+      "id": "agent-capability",
+      "name": "Agent Capability",
+      "category": "capability",
+      "definition": "A declared ability that an agent may use when permitted by policy and context.",
+      "implementedBy": ["Agent-Skills", "Agent-Services"]
+    },
+    {
+      "id": "agent-runtime",
+      "name": "Agent Runtime",
+      "category": "runtime",
+      "definition": "The execution environment where an agent loop, tool call, workflow, or skill runs.",
+      "implementedBy": ["Agent-Runtime", "Agent-Kernel"]
+    },
+    {
+      "id": "agent-control",
+      "name": "Agent Control",
+      "category": "control",
+      "definition": "The layer that constrains agent action through objective, policy, approvals, budget, risk, and kill-switch rules.",
+      "implementedBy": ["Agent-Control", "Agent-Policies", "Agent-Constraints", "Agent-Objective"]
+    },
+    {
+      "id": "agent-governance",
+      "name": "Agent Governance",
+      "category": "governance",
+      "definition": "The accountability model that defines ownership, responsibility, auditability, trust, risk, and separation of duty.",
+      "implementedBy": ["Agent-Trust", "Agent-Compliance", "Agent-Governance-Platform"]
+    },
+    {
+      "id": "agent-evidence",
+      "name": "Agent Evidence",
+      "category": "evidence",
+      "definition": "Recorded proof of agent input, decision boundary, approval, action, result, and verification.",
+      "implementedBy": ["Agent-Traces", "Agent-Analytics"]
+    },
+    {
+      "id": "agent-conformance",
+      "name": "Agent Conformance",
+      "category": "conformance",
+      "definition": "The validation process proving that an implementation follows the canonical concept, schema, policy, and runtime boundary.",
+      "implementedBy": ["Agent-Bench", "Agent-Maturity"]
+    },
+    {
+      "id": "reconciliation",
+      "name": "Reconciliation",
+      "category": "operation",
+      "definition": "The process of comparing desired state and observed state, then safely reducing drift.",
+      "implementedBy": ["Agent-As-A-Operator", "Agent-Control"]
+    }
+  ]
+}
